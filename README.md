@@ -8,7 +8,7 @@ It includes:
 3. code for 'figures 1-3' of the manuscript
 4. Rootzone storage capacity dataset in NetCDF format
 
-
-Code uploaded by:\
+\
+*Code uploaded by:*\
 Chandrakant Singh\
 Stockholm Resilience Centre, Stockholm University
