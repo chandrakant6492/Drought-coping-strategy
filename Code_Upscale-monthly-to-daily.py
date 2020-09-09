@@ -5,7 +5,7 @@ import numpy as np
 start_year_temp = 2001 # For BESS dataset
 year = input('year: ')
 
-era5 = xr.open_dataset('/home/chandra/data/era5_daily/era5_'+str(year)+'_evap_daily_ydaysum_global_0.25.nc')
+era5 = xr.open_dataset('era5_'+str(year)+'_evap_daily_ydaysum_global_0.25.nc')
 era5.e.values = era5.e.values*(-1000)
 era5 = era5.sel(latitude = slice(60,-59.99))
 era5 = era5.e
@@ -17,7 +17,7 @@ era5 = np.array(era5)[:,::-1,:]
 era5_monthly = np.array(era5_monthly)[:,::-1,:]
 
 ## BESS data is in mm/day #180x360x720 #for 2001-2015
-BESS = xr.open_dataset('/home/chandra/data/Temp_data_evap/BESS_Evap_NN.nc')
+BESS = xr.open_dataset('BESS_Evap_NN.nc')
 BESS = BESS.Evaporation.sel(lat = slice(-60,60), time = year)
 BESS = BESS.where(BESS.values > 0)
 #print(BESS.time[0], BESS.time[-1])
@@ -70,7 +70,7 @@ lat = np.arange(-59.875,60,res);ny=np.size(lat)
 dataout = Upscaled_data
 datesout = [datetime.datetime(yy,mm,dd,0) for yy in range(yystart,yystart+nyears) for mm in range(1,13) for dd in range(1,day_per_month[mm-1]+1)]
 # =================================================
-ncout = Dataset('/home/chandra/data/Temp_data_evap/Upscaled/BESS_Upscaled_ET_'+str(year)+'.nc','w','NETCDF4'); # using netCDF3 for output format
+ncout = Dataset('BESS_Upscaled_ET_'+str(year)+'.nc','w','NETCDF4'); # using netCDF3 for output format
 ncout.createDimension('lon',nx);
 ncout.createDimension('lat',ny);
 ncout.createDimension('time',ntime);
