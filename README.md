@@ -10,6 +10,7 @@ It includes:
 5. dataset for 'Rootzone storage capacity' in NetCDF format
 
 \
-*Code uploaded by:*\
+*Coded by:*\
 Chandrakant Singh\
 Stockholm Resilience Centre, Stockholm University
+Contact: chandrakant.singh@su.se
