@@ -12,5 +12,5 @@ It includes:
 \
 *Coded by:*\
 Chandrakant Singh\
-Stockholm Resilience Centre, Stockholm University
+Stockholm Resilience Centre, Stockholm University\
 Contact: chandrakant.singh@su.se
