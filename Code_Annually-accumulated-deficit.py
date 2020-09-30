@@ -51,7 +51,7 @@ def Ensemble_RZSC(year,lat_top = 50, lat_bottom = -50, lon_min = 0, lon_max = 36
     lon = np.linspace(0.125,359.875,nx);
     lat = np.linspace(-49.875,49.875,ny);
 
-    dataout = max_deficit_annual; # create some random data
+    dataout = max_deficit_annual;
     datesout = [datetime.datetime(int(year)+iyear,1,1) for iyear in range(nyears)]; # create datevalues
     # =========================
     ncout = Dataset('/home/chandra/data/Max_RZSC_annual_Chirps_Ensemble(BESS+PML+FLUXCOM)/Simulation7 (Sensitivity dataset)/Ensemble/Max_Rootzone_Ensemble_(BESS+PML+FLUXCOM)_Chirps_0.25res'+str(year)+'.nc', 'w','NETCDF4'); 
