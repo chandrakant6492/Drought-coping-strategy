@@ -48,7 +48,7 @@ def sk_extremes(method = 'mle'):
     lon = np.linspace(0.125,359.875,nx);
     lat = np.linspace(-49.875,49.875,ny);
 
-    dataout = mle_gumbel; # create some random data
+    dataout = mle_gumbel; 
     datesout = [datetime.datetime(int(year)+iyear,1,1) for iyear in range(nyears)]; # create datevalues
         # =========================
     ncout = Dataset('Max_Rootzone_20yearsreturn_Ensemble_(BESS+PML+FLUXCOM)_Chirps_0.25res_2001-2012_'+str(method)+'(skextremes).nc', 'w','NETCDF4'); # using netCDF3 for output format 
@@ -70,7 +70,7 @@ def sk_extremes(method = 'mle'):
     lon = np.linspace(0.125,359.875,nx);
     lat = np.linspace(-49.875,49.875,ny);
 
-    dataout = mle_CI_lower; # create some random data
+    dataout = mle_CI_lower; 
     datesout = [datetime.datetime(int(year)+iyear,1,1) for iyear in range(nyears)]; # create datevalues
         # =========================
     ncout = Dataset('Max_Rootzone_20yearsreturn_Ensemble_(BESS+PML+FLUXCOM)_Chirps_0.25res_2001-2012_'+str(method)+'(skextremes)_CI_0.05_lower.nc', 'w','NETCDF4'); # using netCDF3 for output format 
@@ -92,7 +92,7 @@ def sk_extremes(method = 'mle'):
     lon = np.linspace(0.125,359.875,nx);
     lat = np.linspace(-49.875,49.875,ny);
 
-    dataout = mle_CI_upper; # create some random data
+    dataout = mle_CI_upper; 
     datesout = [datetime.datetime(int(year)+iyear,1,1) for iyear in range(nyears)]; # create datevalues
         # =========================
     ncout = Dataset('Max_Rootzone_20yearsreturn_Ensemble_(BESS+PML+FLUXCOM)_Chirps_0.25res_2001-2012_'+str(method)+'(skextremes)_CI_0.05_upper.nc', 'w','NETCDF4'); # using netCDF3 for output format 
