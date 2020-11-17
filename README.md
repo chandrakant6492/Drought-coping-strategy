@@ -1,6 +1,6 @@
 # Drought coping strategy
 
-This page contains code for the "**Rootzone storage capacity reveals drought coping strategies along rainforest-savanna transitions**" manuscript.
+This page contains code for the article "**Rootzone storage capacity reveals drought coping strategies along rainforest-savanna transitions**" published in *Environmental Research Letters* (https://doi.org/10.1088/1748-9326/abc377).
 
 It includes:
 1. code for calculating 'Annually accumulated deficit'
