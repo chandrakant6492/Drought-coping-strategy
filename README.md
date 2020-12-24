@@ -4,7 +4,7 @@ This page contains code for the article "**Rootzone storage capacity reveals dro
 
 It includes:
 1. code for calculating 'Annually accumulated deficit'
-2. code for calculatng 'Rootzone storage capacity' from '1'
+2. code for calculating 'Rootzone storage capacity' from '1'
 3. code for downscaling 'monthly' evaporation to 'daily' evaporation
 4. code for 'figures 1-3' of the manuscript
 5. dataset for 'Rootzone storage capacity' in NetCDF format
