@@ -2,7 +2,7 @@
 
 This page contains code for the article "**Rootzone storage capacity reveals drought coping strategies along rainforest-savanna transitions**" published in *Environmental Research Letters* (https://doi.org/10.1088/1748-9326/abc377).
 
-*Cite as*: Singh, C., Wang-Erlandsson, L., Fetzer, I., Rockström, J., & van der Ent, R. (2020). Rootzone storage capacity reveals drought coping strategies along rainforest-savanna transitions. **Environmental Research Letters**, 15(12), 124021.
+*Cite as*: **Singh, C.**, Wang-Erlandsson, L., Fetzer, I., Rockström, J., & van der Ent, R. (2020). Rootzone storage capacity reveals drought coping strategies along rainforest-savanna transitions. **Environmental Research Letters**, 15(12), 124021.
 
 It includes:
 1. code for calculating 'Annually accumulated deficit'
